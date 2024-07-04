@@ -7,7 +7,7 @@ const App = () => {
 
   useEffect(() => {
     Alert.alert(
-      'Materi ManagementState',
+      'Node :',
       'ManagementState merujuk pada bagaimana state atau keadaan data dikelola dan diperbarui/di ubah di dalam komponen atau aplikasi(dinamis).',
     );
   }, []);

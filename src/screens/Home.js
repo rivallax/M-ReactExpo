@@ -10,6 +10,9 @@ const HomeScreen = ({navigation}) => {
   const navigateToManagementState = () => {
     navigation.navigate('ManagementState');
   };
+  const navigateToAxiosFetch = () => {
+    navigation.navigate('AxiosFetch');
+  };
 
   return (
     <View style={styles.container}>
@@ -20,13 +23,19 @@ const HomeScreen = ({navigation}) => {
       <TouchableOpacity
         style={[styles.button, styles.navigateButton]}
         onPress={navigateToManagementState}>
-        <Text style={styles.buttonText}>Materi ManagementState</Text>
+        <Text style={styles.buttonText}>Materi Management State</Text>
       </TouchableOpacity>
 
       <TouchableOpacity
         style={[styles.button, styles.navigateButton]}
         onPress={navigateToUiComponent}>
-        <Text style={styles.buttonText}>Materi Ui Component</Text>
+        <Text style={styles.buttonText}>Materi UI Component</Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity
+        style={[styles.button, styles.navigateButton]}
+        onPress={navigateToAxiosFetch}>
+        <Text style={styles.buttonText}>Materi Axios Fetch Api</Text>
       </TouchableOpacity>
     </View>
   );
@@ -51,7 +60,7 @@ const styles = StyleSheet.create({
   },
   headerText: {
     color: 'white',
-    fontSize: 24,
+    fontSize: 25,
     fontWeight: 'bold',
     textTransform: 'uppercase',
   },
@@ -60,7 +69,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     borderRadius: 5,
     marginTop: 20,
-    elevation: 5,
+    elevation: 15,
     backgroundColor: '#21252b',
   },
   navigateButton: {

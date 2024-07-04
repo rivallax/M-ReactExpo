@@ -5,6 +5,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import HomeScreen from './src/screens/Home';
 import UiComponenScreen from './src/screens/UiComponen';
 import ManagementStateScreen from './src/screens/ManagementState';
+import AxiosFetchScreen from './src/screens/AxiosFetch';
 
 const Stack = createNativeStackNavigator();
 
@@ -14,6 +15,7 @@ function App() {
       <Stack.Navigator initialRouteName="Home">
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="UiComponen" component={UiComponenScreen} />
+        <Stack.Screen name="AxiosFetch" component={AxiosFetchScreen} />
         <Stack.Screen
           name="ManagementState"
           component={ManagementStateScreen}
