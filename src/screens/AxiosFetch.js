@@ -130,3 +130,17 @@ const styles = StyleSheet.create({
 });
 
 export default AxiosFetch;
+
+// import React from 'react';
+// import {Button} from '@ui-kitten/components';
+
+// const HomeScreen = ({navigation}) => (
+//   <Layout style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+//     <Text category="h1">AxiosFetch</Text>
+//     <Button onPress={() => navigation.navigate('UiComponen')}>
+//       Go to UiComponen Screen
+//     </Button>
+//   </Layout>
+// );
+
+// export default HomeScreen;
